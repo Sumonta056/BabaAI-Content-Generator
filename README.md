@@ -13,7 +13,7 @@ BabaAI is a comprehensive full-stack AI content generator platform that leverage
 ![Gemini AI](https://img.shields.io/badge/Gemini_AI-1.0.0-000000?style=for-the-badge&logo=gemini-ai)
 ![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-1.0.0-000000?style=for-the-badge&logo=shadcn-ui)
 
-<div>
+</div>
 
 ## Features :
 
