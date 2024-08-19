@@ -38,7 +38,7 @@ const SideNav = () => {
         {MenuList.map((menu, index) => (
           <div
             className={`flex gap-2 mb-2 p-3 hover:bg-rose-600 hover:text-white rounded-lg cursor-pointer hover:scale-105 transition-all ${
-              path === menu.path && "bg-rose-600 text-white"
+              path === menu.path && "bg-rose-600 text-white scale-105"
             }`}
           >
             <menu.icon />
