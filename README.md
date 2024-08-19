@@ -12,17 +12,19 @@
 ![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-1.0.0-000000?style=for-the-badge&logo=shadcn-ui)
 ![Lucide Icons](https://img.shields.io/badge/Lucide_Icons-1.0.0-000000?style=for-the-badge&logo=lucide-icons)
 
-BabaAI is a comprehensive full-stack AI content generator platform that leverages Gemini AI to create and rewrite content based on your prompts.
-
-<img src="./assets/image.png">
+<img src="./assets/image.png" width="80%">
 
 </div>
 
-## Features :
+## ✨ Description :
+
+BabaAI Content Generator is a Next.js application that uses Gemini AI to generate content for the user. The user can generate content by providing a title and a description. The user can also view the generated content in the dashboard.
+
+## 🪶 Features :
 
 - Clerk Authentication and Authorization
 
-## Resources :
+## ⛵ Resources :
 
 - [Shadcn UI Library](https://shadcn.com/)
 
