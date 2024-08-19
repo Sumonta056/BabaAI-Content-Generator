@@ -53,3 +53,9 @@ export const config = {
   ],
 };
 ```
+
+- [Free Icon Template : Logoipsum](https://logoipsum.com/)
+- [Lucide Icons : Beautiful & Consistent Icons](https://lucide.dev/)
+```bash
+npm install lucide-react
+```
