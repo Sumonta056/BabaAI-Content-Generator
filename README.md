@@ -1,5 +1,4 @@
 <div align="center">
-
 <img src="./assets/chatbot.png" width="100px">
 
 ## BabaAI Content Generator
