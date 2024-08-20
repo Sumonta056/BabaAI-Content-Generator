@@ -28,7 +28,7 @@ const SideNav = () => {
     },
   ];
   return (
-    <div className="h-screen p-5 shadow-sm border">
+    <div className="h-screen p-5 shadow-sm border bg-white">
       <div className="flex justify-center flex-col gap-3 items-center">
         <Image src={"/chatbot.png"} alt="logo" width={70} height={70} />
         <h1 className="text-md font-semibold ">BabaAI Content Generator</h1>
