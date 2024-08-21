@@ -1,7 +1,7 @@
 export default  [
     {
         name:'Blog Title',
-        desc:'An AI tool that generate blog title depends on yout blog information',
+        desc:'An AI tool that generate blog title depends on your blog information and overall content in your blog post in your chosen language.',
         category:'Blog',
         icon:'https://cdn-icons-png.flaticon.com/128/4186/4186534.png',
         aiPrompt:'Give me 5 blog topic idea in bullet wise only based on give niche & outline and give me result in Rich text editor format',
@@ -282,7 +282,7 @@ export default  [
     },
     {
         name: 'Code Bug Detector',
-        desc: 'This tool analyzes your input, like error messages and code snippets, to pinpoint and fix bugs, offering detailed solutions and alternatives in a straightforward, user-friendly way.',
+        desc: 'This tool analyzes your input, like error messages and code snippets.',
         icon:'https://cdn-icons-png.flaticon.com/128/4426/4426267.png',
         category: 'code-bug-detector',
        
