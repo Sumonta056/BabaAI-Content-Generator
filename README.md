@@ -10,6 +10,9 @@
 ![Gemini AI](https://img.shields.io/badge/Gemini_AI-1.0.0-000000?style=for-the-badge&logo=gemini-ai)
 ![Shadcn UI](https://img.shields.io/badge/Shadcn_UI-1.0.0-000000?style=for-the-badge&logo=shadcn-ui)
 ![Lucide Icons](https://img.shields.io/badge/Lucide_Icons-1.0.0-000000?style=for-the-badge&logo=lucide-icons)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-13.4-336791?style=for-the-badge&logo=postgresql)
+![DizzleORM](https://img.shields.io/badge/DizzleORM-1.0.0-000000?style=for-the-badge&logo=dizzleorm)
+![Neon](https://img.shields.io/badge/Neon-1.0.0-000000?style=for-the-badge&logo=neon)
 
 <img src="./assets/image.png" width="80%">
 
