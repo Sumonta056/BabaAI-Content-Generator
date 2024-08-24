@@ -8,6 +8,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { chatSession } from "@/utils/AIModel";
+import { db } from "@/utils/db";
+import { AIOutput } from "@/utils/Schema";
+import moment from "moment";
+import { useUser } from "@clerk/nextjs";
 
 interface PROPS {
   params: {
@@ -16,6 +20,7 @@ interface PROPS {
 }
 
 const CreateNewContent = (props: PROPS) => {
+  const { user } = useUser();
   const selectedTemplate: TEMPLATE | undefined = Templates?.find(
     (template) => template.slug === props.params["template-slug"]
   );
@@ -27,9 +32,24 @@ const CreateNewContent = (props: PROPS) => {
     const SelectedPrompt = selectedTemplate?.aiPrompt;
     const FinalAIPrompt = JSON.stringify(formData) + ", " + SelectedPrompt;
     const result = await chatSession.sendMessage(FinalAIPrompt);
-    setAiOutput(result.response.text());
+    setAiOutput(result?.response.text());
+    await SaveInDb(formData, selectedTemplate?.slug, result?.response.text());
     setLoading(false);
   };
+
+  const SaveInDb = async (formData: any, slug: any, aiOutpu: string) => {
+    // Save in db
+    const result = await db.insert(AIOutput).values({
+      formData: formData,
+      aiResponse: aiOutpu,
+      templateSlug: slug,
+      createdBy: user?.primaryEmailAddress?.emailAddress,
+      createdAT: moment().format("DD-MM-YYYY"),
+    });
+
+    console.log(result);
+  };
+
   return (
     <div className="p-7">
       <Link href={"/dashboard"}>
@@ -44,9 +64,7 @@ const CreateNewContent = (props: PROPS) => {
           loading={loading}
         />
         <div className="col-span-2">
-          <OutputSection
-          aiOutput={aiOutput}
-          />
+          <OutputSection aiOutput={aiOutput} />
         </div>
       </div>
     </div>
