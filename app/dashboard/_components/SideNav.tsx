@@ -3,6 +3,7 @@ import { FileClock, Home, Settings, WalletCards } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import UsageTrack from "./UsageTrack";
 
 const SideNav = () => {
   const path = usePathname();
@@ -47,6 +48,9 @@ const SideNav = () => {
             <h2>{menu.name}</h2>
           </Link>
         ))}
+      </div>
+      <div className="absolute bottom-10 left-0 w-full">
+        <UsageTrack />
       </div>
     </div>
   );
