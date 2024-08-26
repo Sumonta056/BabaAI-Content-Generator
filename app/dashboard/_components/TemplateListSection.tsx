@@ -1,4 +1,3 @@
-
 import Templates from "@/app/(data)/Templates";
 import { useEffect, useState } from "react";
 import TemplateCard from "./TemplateCard";
@@ -34,7 +33,7 @@ const TemplateListSection = ({ userSearchInput }: any) => {
   }, [userSearchInput]);
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-10">
+    <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 p-10">
       {templateList.map((item: TEMPLATE, index: number) => (
         <TemplateCard {...item} />
       ))}
