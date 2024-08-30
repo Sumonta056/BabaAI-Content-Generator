@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "@toast-ui/editor/dist/toastui-editor.css";
 import fontSize from "tui-editor-plugin-font-size";
 import "tui-editor-plugin-font-size/dist/tui-editor-plugin-font-size.css";
@@ -18,12 +18,31 @@ const OutputSection = ({ aiOutput }: PROPS) => {
     editorInstance.setMarkdown(aiOutput);
   }, [aiOutput]);
 
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(aiOutput);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 3000); //
+  };
+
   return (
     <div className="bg-white shadow-lg border rounded-lg">
       <div className="flex justify-between items-center p-5">
         <h2 className="font-medium text-lg">Your Result</h2>
-        <Button className="flex gap-1 items-center justify-center bg-rose-600">
-          <Copy size={20} /> Copy
+        <Button
+          className="flex gap-1 items-center justify-center bg-rose-600"
+          onClick={handleCopy}
+        >
+          {copied ? (
+            <div className="flex  gap-1 ">
+              <Copy size={20} /> Copied!
+            </div>
+          ) : (
+            <div className="flex  gap-1">
+              <Copy size={20} /> Copy
+            </div>
+          )}
         </Button>
       </div>
       <Editor

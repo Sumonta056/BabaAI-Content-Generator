@@ -59,7 +59,13 @@ const OutputTable = ({ filteredData }: { filteredData: any[] }) => {
                 <TableCell className="text-center">{category}</TableCell>
                 <TableCell className="text-center">{item.createdAT}</TableCell>
                 <TableCell align="center">
-                  <Copy color="red" />
+                  <button
+                    onClick={() =>
+                      navigator.clipboard.writeText(item.aiResponse)
+                    }
+                  >
+                    <Copy color="red" />
+                  </button>
                 </TableCell>
               </TableRow>
             );
