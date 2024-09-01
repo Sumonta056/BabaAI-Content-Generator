@@ -14,7 +14,7 @@
 ![DizzleORM](https://img.shields.io/badge/DizzleORM-1.0.0-000000?style=for-the-badge&logo=dizzleorm)
 ![Neon](https://img.shields.io/badge/Neon-1.0.0-000000?style=for-the-badge&logo=neon)
 
-<img src="./assets/image.png" width="80%">
+<img src="./assets/1 (2).png" width="90%">
 
 </div>
 
@@ -24,7 +24,23 @@ BabaAI Content Generator is a Next.js application that uses Gemini AI to generat
 
 ## 🪶 Features :
 
-- Clerk Authentication and Authorization
+- **Clerk Authentication and Authorization**
+  ![](<./assets/1%20(1).png>)
+
+- **Baba AI Dashboard Page**
+  ![](<./assets/1%20(2).png>)
+
+- **Content Generation Page**
+  ![](<./assets/1%20(3).png>)
+
+- **Generatining a blog post content using AI**
+  ![](<./assets/1%20(4).png>)
+
+- **History Page**
+  ![](<./assets/1%20(5).png>)
+
+- **Payment and billing Section**
+  ![](<./assets/1%20(6).png>)
 
 ## ⛵ Resources :
 
